@@ -80,6 +80,9 @@ export const VideoRecorder = () => {
 							width: 335,
 							height: 524,
 						}}
+						width={335}
+						height={524}
+						style={{ objectFit: "cover"}}
                         onUserMediaError={showAccessBlocked}
 					/>
 					{capturing ? (
@@ -96,6 +99,9 @@ export const VideoRecorder = () => {
 					height="524"
 					disablePictureInPicture
 					controlsList="nodownload nofullscreen noremoteplayback"
+					width={335}
+                    height={524}
+                    style={{ objectFit: "cover"}}
 				>
 					<source src={videoURL} />
 				</video>
